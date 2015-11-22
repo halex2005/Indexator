@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace TextIndexLib
 {
   abstract class SimpleIndex : IIndex
   {
-    private readonly List<string> indexedWords;
+    protected readonly List<string> indexedTokens;
 
     protected SimpleIndex()
     {
-      indexedWords = new List<string>();
+      indexedTokens = new List<string>();
     }
 
     public bool Contains(string text)
     {
-      return indexedWords?.Contains(text) ?? false;
+      return indexedTokens?.Contains(text) ?? false;
     }
 
     public abstract void AddToIndex(string text);
