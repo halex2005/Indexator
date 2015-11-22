@@ -4,7 +4,7 @@ namespace TextIndexLib
 {
   abstract class SimpleIndex : IIndex
   {
-    private readonly List<string> indexedTokens;
+    protected readonly List<string> indexedTokens;
 
     protected SimpleIndex()
     {
