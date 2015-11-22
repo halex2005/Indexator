@@ -40,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IWordIndex.cs" />
-    <Compile Include="SimpleWordIndex.cs" />
+    <Compile Include="IIndex.cs" />
+    <Compile Include="SimpleIndex.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
